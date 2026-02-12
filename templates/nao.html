@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Você ❤️</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding: 24px;
+      text-align:center;
+      font-family: Arial, sans-serif;
+      color:#fff;
+      background: #ff7eb3;
+    }
+
+    h1{
+      margin: 0 0 18px 0;
+      font-size: clamp(26px, 5vw, 40px);
+      line-height: 1.15;
+    }
+
+    img{
+      width: min(360px, 90vw);
+      max-height: 55vh;
+      object-fit: contain;
+      border-radius: 18px;
+      margin: 8px 0 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    }
+
+    button{
+      width: min(240px, 80vw);
+      padding: 12px 18px;
+      font-size: clamp(15px, 2.6vw, 16px);
+      border:none;
+      border-radius: 12px;
+      cursor:pointer;
+    }
+
+    a{ text-decoration:none; }
+  </style>
+</head>
+<body>
+
+  <h1>Você é linda.</h1>
+
+  <img src="{{ url_for('static', filename='img_nao.png') }}" alt="Foto" />
+
+  <a href="/"><button>Voltar ao início</button></a>
+
+</body>
+</html>
